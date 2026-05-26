@@ -4,8 +4,8 @@ TAR_FILE="/tmp/webui.tar.gz"  # 替换为您的 tar 文件路径
 TARGET_DIR="/root"  # 替换为您的目标目录
 
 # 更新软件包列表并安装 tar（如果未安装）
-opkg update
-opkg install tar comgt chat
+apk update
+apk add tar comgt chat
 
 # 检查 TAR 文件是否存在
 if [ ! -f "$TAR_FILE" ]; then
